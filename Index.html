@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Icarus Wings</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+
+        <div id="start-screen" class="screen">
+            <h1 class="title">Icarus Wings</h1>
+            <p class="subtitle">Tap, Click, or Space to Fly</p>
+            <button id="start-btn" class="btn">Play Now</button>
+        </div>
+
+        <div id="game-over-screen" class="screen hidden">
+            <h1 class="title">Game Over</h1>
+            <div class="score-card">
+                <p>Score</p>
+                <div id="final-score">0</div>
+                <p>Best</p>
+                <div id="best-score">0</div>
+            </div>
+            <button id="restart-btn" class="btn">Try Again</button>
+        </div>
+
+        <div id="score-display" class="hidden">0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
